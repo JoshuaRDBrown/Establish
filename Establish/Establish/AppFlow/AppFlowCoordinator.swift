@@ -20,4 +20,9 @@ public final class AppFlowCoordinator {
         let vc = LoginCoordinator().instantiate()
         window.rootViewController = vc
     }
+    
+    func showWelcome() {
+        let vc = WelcomeCoordinator().instantiate()
+        window.rootViewController = vc
+    }
 }

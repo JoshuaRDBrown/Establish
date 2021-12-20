@@ -6,7 +6,7 @@
 //
 
 import Foundation
-//import Firebase
+import Firebase
 
 public final class AppContext {
 
@@ -14,9 +14,9 @@ public final class AppContext {
 
     public init() { }
 
-//    public var userObject: User? {
-//        Auth.auth().currentUser
-//    }
+    public var userObject: User? {
+        Auth.auth().currentUser
+    }
 
     public var isFirstLaunch: Bool {
 

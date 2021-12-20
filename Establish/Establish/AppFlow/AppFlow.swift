@@ -24,6 +24,7 @@ public final class AppFlow: AppContextAccessProtocol {
     }
 
     func start() {
-        coordinator.showLogin()
+        //coordinator.showLogin()
+        coordinator.showWelcome()
     }
 }
