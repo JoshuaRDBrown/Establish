@@ -1,12 +1,13 @@
 //
-//  WelcomeViewModel.swift
+//  CreateAccountViewModel.swift
 //  Establish
 //
-//  Created by Joshua Brown on 16/12/2021.
+//  Created by Joshua Brown on 19/01/2022.
 //
 
 import Foundation
 import Combine
+import FirebaseAuth
 
 enum PasswordStrength: String {
     case weak = "Weak"
@@ -14,12 +15,13 @@ enum PasswordStrength: String {
     case strong = "Strong"
 }
 
-final class WelcomeViewModel: ObservableObject {
+class CreateAccountViewModel: ObservableObject {
     
     @Published public var username = ""
     @Published public var email = ""
     @Published public var password = ""
     @Published public var passwordRepeated = ""
+    @Published public var isLoading = false
     
     @Published private(set) public var emailError = ""
     @Published private(set) public var passwordError = ""
@@ -27,10 +29,17 @@ final class WelcomeViewModel: ObservableObject {
     
     private var subscriptions = Set<AnyCancellable>()
     
-    private let signUpHander: SignUpHandler
+    private let coordinator: EnqueueViewCoordinator<CreateAccountViewModel.RouteType>
+    private let createAccountHandler: CreateAccountHandler
     
-    init(signUpHandler: SignUpHandler = SignUpHandler()) {
-        self.signUpHander = signUpHandler
+    enum RouteType {
+        case login
+        case inviteFriends
+    }
+    
+    init(coordinator: EnqueueViewCoordinator<CreateAccountViewModel.RouteType>, createAccountHandler: CreateAccountHandler = CreateAccountHandler()) {
+        self.coordinator = coordinator
+        self.createAccountHandler = createAccountHandler
         
         $email
             .receive(on: DispatchQueue.main)
@@ -82,12 +91,16 @@ final class WelcomeViewModel: ObservableObject {
             .store(in: &subscriptions)
     }
     
+    var shouldNextButtonBeTappable: Bool {
+        self.emailError.isEmpty && self.passwordError.isEmpty && !hasEmptyFields()
+    }
+    
     func hasEmptyFields() -> Bool {
         return ![username, email, password, passwordRepeated].filter { $0.isEmpty }.isEmpty
     }
     
     func isEmailUnique(emailAddress: String) -> Future<Bool, Error> {
-        return signUpHander.isUsernameUnique(email: emailAddress)
+        return createAccountHandler.isUsernameUnique(email: emailAddress)
     }
     
     func isEmailValid(emailAddress: String) -> Bool {
@@ -115,6 +128,23 @@ final class WelcomeViewModel: ObservableObject {
     }
     
     func nextButtonTapped() {
-        //Next section
+        self.isLoading = true
+        createAccountHandler.createAccount(email: self.email, password: self.password, username: self.username)
+            .receive(on: DispatchQueue.main)
+            .debounce(for: .seconds(2), scheduler: RunLoop.main)
+            .sink(receiveCompletion: { [weak self] completion in
+                self?.isLoading = false
+                switch completion {
+                case .failure:
+                    self?.emailError = "An error occurred while creating your account, please try again later."
+                case .finished:
+                    self?.coordinator.enqueue(with: .inviteFriends, animated: true)
+                }
+            }, receiveValue: {  _ in })
+            .store(in: &subscriptions)
+    }
+    
+    func alreadyHaveAccountButtonTapped() {
+        coordinator.enqueue(with: .login, animated: true)
     }
 }

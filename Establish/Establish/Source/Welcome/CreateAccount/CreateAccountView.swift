@@ -1,15 +1,15 @@
 //
-//  WelcomeView.swift
+//  CreateAccountView.swift
 //  Establish
 //
-//  Created by Joshua Brown on 16/12/2021.
+//  Created by Joshua Brown on 24/12/2021.
 //
 
+import Foundation
 import SwiftUI
 
-struct WelcomeView: View, ThemeManagerAccessProtocol {
-    
-    @ObservedObject private var viewModel: WelcomeViewModel
+struct CreateAccountView: View, ThemeManagerAccessProtocol {
+    @ObservedObject private var viewModel: CreateAccountViewModel
     
     @State private var passwordStrength = "Weak"
     @State private var passwordProgressBarColor: Color = .red
@@ -17,7 +17,7 @@ struct WelcomeView: View, ThemeManagerAccessProtocol {
     
     private let sizes: Sizes
     
-    init(viewModel: WelcomeViewModel, sizes: Sizes = Sizes()) {
+    init(viewModel: CreateAccountViewModel, sizes: Sizes = Sizes()) {
         self.viewModel = viewModel
         self.sizes = sizes
     }
@@ -51,12 +51,13 @@ struct WelcomeView: View, ThemeManagerAccessProtocol {
     
     private var formBottomButtons: some View {
         VStack(alignment: .center) {
-            Button("Next", action: { })
+            Button("Next", action: viewModel.nextButtonTapped)
                 .padding(.horizontal, sizes.largePadding)
                 .padding(.vertical, sizes.mediumPadding)
                 .foregroundColor(.white)
-                .background(themeManager.color(for: .brandGreen))
-            Button("I already have an account", action: { })
+                .disabled(!viewModel.shouldNextButtonBeTappable)
+                .background(viewModel.shouldNextButtonBeTappable ? themeManager.color(for: .brandGreen) : .gray)
+            Button("I already have an account", action: viewModel.alreadyHaveAccountButtonTapped)
                 .foregroundColor(themeManager.color(for: .brandGreen))
         }
     }
@@ -87,7 +88,7 @@ struct WelcomeView: View, ThemeManagerAccessProtocol {
         }
         .animation(Animation.default.speed(sizes.viewAnimationSpeed))
     }
-        
+    
     private var formError: some View {
         VStack(alignment: .leading, spacing: .zero) {
             if !viewModel.emailError.isEmpty {
@@ -155,6 +156,5 @@ struct WelcomeView: View, ThemeManagerAccessProtocol {
             self.inputDividerPadding = inputDividerPadding
             self.viewAnimationSpeed = viewAnimationSpeed
         }
-        
     }
 }

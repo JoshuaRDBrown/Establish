@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseAuth
 
 public final class AppContext {
 
@@ -19,14 +19,11 @@ public final class AppContext {
     }
 
     public var isFirstLaunch: Bool {
-
-        let defaults = UserDefaults.standard
-
-        if (defaults.string(forKey: "appHasBeenLaunchedOnce") != nil) {
+        if UserDefaultsUtils.shared.isKeyAlreadySet(key: "appHasBeenLaunchedOnce") {
             return false
         }
 
-        defaults.set(true, forKey: "appHasBeenLaunchedOnce")
+        UserDefaultsUtils.shared.setValue(for: "appHasBeenLaunchedOnce", value: true)
         return true
     }
 }

@@ -14,9 +14,20 @@ import XCTest
 final class WelcomeViewModelTests: XCTestCase {
     
     private var subscriptions = Set<AnyCancellable>()
+    private let coordinator = CreateAccountCoordinatorMock()
+    
+    func testAlreadyHaveAccountButtonTapped() {
+        let viewModel = CreateAccountViewModel(coordinator: EnqueueViewCoordinator<CreateAccountViewModel.RouteType>(coordinator))
+        
+        XCTAssertEqual(coordinator.context, nil)
+        
+        viewModel.alreadyHaveAccountButtonTapped()
+        
+        XCTAssertEqual(coordinator.context, CreateAccountViewModel.RouteType.login)
+    }
     
     func testHasEmptyFields() {
-        let viewModel = WelcomeViewModel()
+        let viewModel = CreateAccountViewModel(coordinator: EnqueueViewCoordinator<CreateAccountViewModel.RouteType>(coordinator))
         
         given("All the sign up form fields are filled in") {
             viewModel.username = "Joshua"
@@ -47,9 +58,43 @@ final class WelcomeViewModelTests: XCTestCase {
         }
     }
     
+    func testShouldNextButtonBeTappable() {
+        let viewModel = CreateAccountViewModel(coordinator: EnqueueViewCoordinator<CreateAccountViewModel.RouteType>(coordinator))
+        
+        given("The user has inputted into all the fields correctly") {
+            viewModel.email = "john.doe@gmail.com"
+            viewModel.password = "Welcome1"
+            viewModel.passwordRepeated = "Welcome1"
+            viewModel.username = "John Doe"
+        }
+        
+        let result1 = when("shouldNextButtonBeTappable() is called") {
+            viewModel.shouldNextButtonBeTappable
+        }
+        
+        then("The returned value should be true") {
+            XCTAssertTrue(result1)
+        }
+        
+        given("The user has not inputted into all the fields") {
+            viewModel.email = ""
+            viewModel.password = "Welcome1"
+            viewModel.passwordRepeated = "Welcome1"
+            viewModel.username = "John Doe"
+        }
+        
+        let result2 = when("shouldNextButtonBeTappable() is called") {
+            viewModel.shouldNextButtonBeTappable
+        }
+        
+        then("The returned value should be false") {
+            XCTAssertFalse(result2)
+        }
+    }
+    
     func testIsEmailValid() {
         
-        let viewModel = WelcomeViewModel()
+        let viewModel = CreateAccountViewModel(coordinator: EnqueueViewCoordinator<CreateAccountViewModel.RouteType>(coordinator))
         
         let formattedEmail = given("A well formatted email") {
             "joshua.brown@test.com"
@@ -77,7 +122,7 @@ final class WelcomeViewModelTests: XCTestCase {
     }
     
     func testCalculatePasswordStrength() {
-        let viewModel = WelcomeViewModel()
+        let viewModel = CreateAccountViewModel(coordinator: EnqueueViewCoordinator<CreateAccountViewModel.RouteType>(coordinator))
         
         let input1 = given("A password with no special chars and is less than 8 chars long") {
             "123"
@@ -117,7 +162,7 @@ final class WelcomeViewModelTests: XCTestCase {
     }
     
     func testDoPasswordsMatch() {
-        let viewModel = WelcomeViewModel()
+        let viewModel = CreateAccountViewModel(coordinator: EnqueueViewCoordinator<CreateAccountViewModel.RouteType>(coordinator))
         
         var password1 = ""
         var password2 = ""
@@ -150,7 +195,7 @@ final class WelcomeViewModelTests: XCTestCase {
     }
     
     func testIsEmailUnique() {
-        let viewModel = WelcomeViewModel()
+        let viewModel = CreateAccountViewModel(coordinator: EnqueueViewCoordinator<CreateAccountViewModel.RouteType>(coordinator))
         let completion1 = self.expectation(description: "receiveValue should be called!")
         
         var isUnique = false

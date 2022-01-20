@@ -26,20 +26,39 @@
 		83B0AF19275E665E00A0242D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0AF16275E665E00A0242D /* AppDelegate.swift */; };
 		83B0AF1D275E667A00A0242D /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0AF1B275E667A00A0242D /* AppFlowCoordinator.swift */; };
 		83B0AF1E275E667A00A0242D /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0AF1C275E667A00A0242D /* AppFlow.swift */; };
-		E84A08EF276B83C900A745CD /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A08EE276B83C900A745CD /* WelcomeViewModel.swift */; };
 		E84A08F2276B95AE00A745CD /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A08F1276B95AE00A745CD /* ProgressBarView.swift */; };
 		E84A08F4276B95ED00A745CD /* PasswordStrengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A08F3276B95ED00A745CD /* PasswordStrengthView.swift */; };
+		E8A6C4232799AA3900DF50E3 /* CreateAccountCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6C4222799AA3900DF50E3 /* CreateAccountCoordinatorMock.swift */; };
+		E8A6C4262799B29F00DF50E3 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6C4252799B29F00DF50E3 /* LoginViewModelTests.swift */; };
+		E8A6C4282799B6C000DF50E3 /* LoginCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6C4272799B6C000DF50E3 /* LoginCoordinatorMock.swift */; };
+		E8A6C42A2799CA3200DF50E3 /* LoginHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6C4292799CA3200DF50E3 /* LoginHandlerTests.swift */; };
+		E8A6C42D2799D04D00DF50E3 /* InviteFriendsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6C42C2799D04D00DF50E3 /* InviteFriendsViewModelTests.swift */; };
+		E8A6C42F2799D07100DF50E3 /* InviteFriendsCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6C42E2799D07100DF50E3 /* InviteFriendsCoordinatorMock.swift */; };
 		E8B99268276FDC7F00D9A101 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E8B99267276FDC7F00D9A101 /* FirebaseAnalytics */; };
 		E8B9926A276FDC7F00D9A101 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E8B99269276FDC7F00D9A101 /* FirebaseAuth */; };
 		E8B9926C276FDC7F00D9A101 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E8B9926B276FDC7F00D9A101 /* FirebaseAuthCombine-Community */; };
 		E8B9926E276FDC7F00D9A101 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E8B9926D276FDC7F00D9A101 /* FirebaseFirestore */; };
 		E8B99270276FDC7F00D9A101 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E8B9926F276FDC7F00D9A101 /* FirebaseFirestoreCombine-Community */; };
-		E8B99272276FDD1100D9A101 /* SignUpHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B99271276FDD1100D9A101 /* SignUpHandler.swift */; };
+		E8B99272276FDD1100D9A101 /* CreateAccountHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B99271276FDD1100D9A101 /* CreateAccountHandler.swift */; };
 		E8B99274276FE53600D9A101 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8B99273276FE53600D9A101 /* GoogleService-Info.plist */; };
-		E8B9927727711C3600D9A101 /* WelcomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B9927627711C3600D9A101 /* WelcomeViewModelTests.swift */; };
+		E8B9927727711C3600D9A101 /* CreateAccountViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B9927627711C3600D9A101 /* CreateAccountViewModelTests.swift */; };
 		E8B9931227711DFD00D9A101 /* XCTestCase+GWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B9931127711DFD00D9A101 /* XCTestCase+GWT.swift */; };
-		E8E049A7276B74A300A78294 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E049A6276B74A300A78294 /* WelcomeView.swift */; };
-		E8E049A9276B75D700A78294 /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E049A8276B75D700A78294 /* WelcomeCoordinator.swift */; };
+		E8B9931827762C1A00D9A101 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B9931727762C1A00D9A101 /* CreateAccountView.swift */; };
+		E8BFA1932795BEFA00B57A7A /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BFA1922795BEFA00B57A7A /* CheckboxView.swift */; };
+		E8BFA1952795C66E00B57A7A /* LabelledDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BFA1942795C66E00B57A7A /* LabelledDivider.swift */; };
+		E8BFA1972795C93300B57A7A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BFA1962795C93300B57A7A /* LoginViewModel.swift */; };
+		E8BFA19A2795CACD00B57A7A /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = E8BFA1992795CACD00B57A7A /* SwiftKeychainWrapper */; };
+		E8BFA19D2795CD0800B57A7A /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BFA19C2795CD0800B57A7A /* UserDefaultsUtils.swift */; };
+		E8E9E2D527982A400040CE1B /* LoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9E2D427982A3F0040CE1B /* LoginHandler.swift */; };
+		E8E9E2D7279859500040CE1B /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9E2D6279859500040CE1B /* ModalView.swift */; };
+		E8E9E3712798666C0040CE1B /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9E3702798666C0040CE1B /* CreateAccountViewModel.swift */; };
+		E8E9E374279868150040CE1B /* InviteFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9E373279868150040CE1B /* InviteFriendsView.swift */; };
+		E8E9E37827996F830040CE1B /* CreateAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9E37727996F830040CE1B /* CreateAccountCoordinator.swift */; };
+		E8E9E37A279970940040CE1B /* InviteFriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9E379279970940040CE1B /* InviteFriendsViewModel.swift */; };
+		E8E9E37C279970A00040CE1B /* InviteFriendsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9E37B279970A00040CE1B /* InviteFriendsCoordinator.swift */; };
+		E8E9E4AF2799A64A0040CE1B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9E4AE2799A64A0040CE1B /* HomeView.swift */; };
+		E8E9E4B12799A6700040CE1B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9E4B02799A6700040CE1B /* HomeViewModel.swift */; };
+		E8E9E4B32799A6ED0040CE1B /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9E4B22799A6ED0040CE1B /* HomeCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,15 +104,34 @@
 		83B0AF16275E665E00A0242D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B0AF1B275E667A00A0242D /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
 		83B0AF1C275E667A00A0242D /* AppFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
-		E84A08EE276B83C900A745CD /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		E84A08F1276B95AE00A745CD /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		E84A08F3276B95ED00A745CD /* PasswordStrengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStrengthView.swift; sourceTree = "<group>"; };
-		E8B99271276FDD1100D9A101 /* SignUpHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpHandler.swift; sourceTree = "<group>"; };
+		E8A6C4222799AA3900DF50E3 /* CreateAccountCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountCoordinatorMock.swift; sourceTree = "<group>"; };
+		E8A6C4252799B29F00DF50E3 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		E8A6C4272799B6C000DF50E3 /* LoginCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinatorMock.swift; sourceTree = "<group>"; };
+		E8A6C4292799CA3200DF50E3 /* LoginHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHandlerTests.swift; sourceTree = "<group>"; };
+		E8A6C42C2799D04D00DF50E3 /* InviteFriendsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsViewModelTests.swift; sourceTree = "<group>"; };
+		E8A6C42E2799D07100DF50E3 /* InviteFriendsCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsCoordinatorMock.swift; sourceTree = "<group>"; };
+		E8B99271276FDD1100D9A101 /* CreateAccountHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountHandler.swift; sourceTree = "<group>"; };
 		E8B99273276FE53600D9A101 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E8B9927627711C3600D9A101 /* WelcomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModelTests.swift; sourceTree = "<group>"; };
+		E8B9927627711C3600D9A101 /* CreateAccountViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModelTests.swift; sourceTree = "<group>"; };
 		E8B9931127711DFD00D9A101 /* XCTestCase+GWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+GWT.swift"; sourceTree = "<group>"; };
-		E8E049A6276B74A300A78294 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		E8E049A8276B75D700A78294 /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
+		E8B9931727762C1A00D9A101 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		E8BFA1922795BEFA00B57A7A /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
+		E8BFA1942795C66E00B57A7A /* LabelledDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledDivider.swift; sourceTree = "<group>"; };
+		E8BFA1962795C93300B57A7A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E8BFA19C2795CD0800B57A7A /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
+		E8BFA19E2796C8EC00B57A7A /* Establish.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Establish.entitlements; sourceTree = "<group>"; };
+		E8E9E2D427982A3F0040CE1B /* LoginHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHandler.swift; sourceTree = "<group>"; };
+		E8E9E2D6279859500040CE1B /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		E8E9E3702798666C0040CE1B /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		E8E9E373279868150040CE1B /* InviteFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsView.swift; sourceTree = "<group>"; };
+		E8E9E37727996F830040CE1B /* CreateAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountCoordinator.swift; sourceTree = "<group>"; };
+		E8E9E379279970940040CE1B /* InviteFriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsViewModel.swift; sourceTree = "<group>"; };
+		E8E9E37B279970A00040CE1B /* InviteFriendsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsCoordinator.swift; sourceTree = "<group>"; };
+		E8E9E4AE2799A64A0040CE1B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E8E9E4B02799A6700040CE1B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E8E9E4B22799A6ED0040CE1B /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +141,7 @@
 			files = (
 				E8B99268276FDC7F00D9A101 /* FirebaseAnalytics in Frameworks */,
 				E8B9926E276FDC7F00D9A101 /* FirebaseFirestore in Frameworks */,
+				E8BFA19A2795CACD00B57A7A /* SwiftKeychainWrapper in Frameworks */,
 				E8B9926C276FDC7F00D9A101 /* FirebaseAuthCombine-Community in Frameworks */,
 				E8B99270276FDC7F00D9A101 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				E8B9926A276FDC7F00D9A101 /* FirebaseAuth in Frameworks */,
@@ -149,6 +188,7 @@
 		83425AF5275E548F0090B331 /* Establish */ = {
 			isa = PBXGroup;
 			children = (
+				E8BFA19E2796C8EC00B57A7A /* Establish.entitlements */,
 				E8B99273276FE53600D9A101 /* GoogleService-Info.plist */,
 				83B0AEFB275E663700A0242D /* Source */,
 				83B0AF1A275E667A00A0242D /* AppFlow */,
@@ -174,8 +214,10 @@
 		83425B0C275E54910090B331 /* EstablishTests */ = {
 			isa = PBXGroup;
 			children = (
+				E8A6C42B2799D03800DF50E3 /* InviteFriends */,
+				E8A6C4242799B28E00DF50E3 /* Login */,
 				E8B9931027711DE800D9A101 /* TestHelpers */,
-				E8B9927527711C1D00D9A101 /* Welcome */,
+				E8B9927527711C1D00D9A101 /* CreateAccount */,
 				83425B0F275E54910090B331 /* Info.plist */,
 			);
 			path = EstablishTests;
@@ -193,6 +235,7 @@
 		83B0AEFB275E663700A0242D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E8E9E4AD2799A63F0040CE1B /* Home */,
 				E84A08F0276B959B00A745CD /* Reuseables */,
 				E8E049A5276B748000A78294 /* Welcome */,
 				83B0AEFC275E663700A0242D /* Login */,
@@ -205,6 +248,8 @@
 			children = (
 				83B0AEFD275E663700A0242D /* LoginCoordinator.swift */,
 				83B0AEFE275E663700A0242D /* LoginView.swift */,
+				E8BFA1962795C93300B57A7A /* LoginViewModel.swift */,
+				E8E9E2D427982A3F0040CE1B /* LoginHandler.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -212,6 +257,7 @@
 		83B0AF01275E665000A0242D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E8BFA19B2795CCF300B57A7A /* Helpers */,
 				83B0AF02275E665000A0242D /* Coordinator */,
 				83B0AF05275E665000A0242D /* ThemeManager */,
 				83B0AF09275E665000A0242D /* AppContext */,
@@ -270,16 +316,39 @@
 			isa = PBXGroup;
 			children = (
 				E84A08F1276B95AE00A745CD /* ProgressBarView.swift */,
+				E8BFA1922795BEFA00B57A7A /* CheckboxView.swift */,
+				E8BFA1942795C66E00B57A7A /* LabelledDivider.swift */,
+				E8E9E2D6279859500040CE1B /* ModalView.swift */,
 			);
 			path = Reuseables;
 			sourceTree = "<group>";
 		};
-		E8B9927527711C1D00D9A101 /* Welcome */ = {
+		E8A6C4242799B28E00DF50E3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				E8B9927627711C3600D9A101 /* WelcomeViewModelTests.swift */,
+				E8A6C4252799B29F00DF50E3 /* LoginViewModelTests.swift */,
+				E8A6C4272799B6C000DF50E3 /* LoginCoordinatorMock.swift */,
+				E8A6C4292799CA3200DF50E3 /* LoginHandlerTests.swift */,
 			);
-			path = Welcome;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E8A6C42B2799D03800DF50E3 /* InviteFriends */ = {
+			isa = PBXGroup;
+			children = (
+				E8A6C42C2799D04D00DF50E3 /* InviteFriendsViewModelTests.swift */,
+				E8A6C42E2799D07100DF50E3 /* InviteFriendsCoordinatorMock.swift */,
+			);
+			path = InviteFriends;
+			sourceTree = "<group>";
+		};
+		E8B9927527711C1D00D9A101 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				E8B9927627711C3600D9A101 /* CreateAccountViewModelTests.swift */,
+				E8A6C4222799AA3900DF50E3 /* CreateAccountCoordinatorMock.swift */,
+			);
+			path = CreateAccount;
 			sourceTree = "<group>";
 		};
 		E8B9931027711DE800D9A101 /* TestHelpers */ = {
@@ -290,16 +359,53 @@
 			path = TestHelpers;
 			sourceTree = "<group>";
 		};
+		E8B9931627762BF500D9A101 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				E84A08F3276B95ED00A745CD /* PasswordStrengthView.swift */,
+				E8B9931727762C1A00D9A101 /* CreateAccountView.swift */,
+				E8E9E3702798666C0040CE1B /* CreateAccountViewModel.swift */,
+				E8B99271276FDD1100D9A101 /* CreateAccountHandler.swift */,
+				E8E9E37727996F830040CE1B /* CreateAccountCoordinator.swift */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
+		E8BFA19B2795CCF300B57A7A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E8BFA19C2795CD0800B57A7A /* UserDefaultsUtils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E8E049A5276B748000A78294 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				E8E049A6276B74A300A78294 /* WelcomeView.swift */,
-				E8E049A8276B75D700A78294 /* WelcomeCoordinator.swift */,
-				E84A08EE276B83C900A745CD /* WelcomeViewModel.swift */,
-				E84A08F3276B95ED00A745CD /* PasswordStrengthView.swift */,
-				E8B99271276FDD1100D9A101 /* SignUpHandler.swift */,
+				E8E9E372279867F70040CE1B /* InviteFriends */,
+				E8B9931627762BF500D9A101 /* CreateAccount */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		E8E9E372279867F70040CE1B /* InviteFriends */ = {
+			isa = PBXGroup;
+			children = (
+				E8E9E373279868150040CE1B /* InviteFriendsView.swift */,
+				E8E9E379279970940040CE1B /* InviteFriendsViewModel.swift */,
+				E8E9E37B279970A00040CE1B /* InviteFriendsCoordinator.swift */,
+			);
+			path = InviteFriends;
+			sourceTree = "<group>";
+		};
+		E8E9E4AD2799A63F0040CE1B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E8E9E4AE2799A64A0040CE1B /* HomeView.swift */,
+				E8E9E4B02799A6700040CE1B /* HomeViewModel.swift */,
+				E8E9E4B22799A6ED0040CE1B /* HomeCoordinator.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +430,7 @@
 				E8B9926B276FDC7F00D9A101 /* FirebaseAuthCombine-Community */,
 				E8B9926D276FDC7F00D9A101 /* FirebaseFirestore */,
 				E8B9926F276FDC7F00D9A101 /* FirebaseFirestoreCombine-Community */,
+				E8BFA1992795CACD00B57A7A /* SwiftKeychainWrapper */,
 			);
 			productName = Establish;
 			productReference = 83425AF3275E548F0090B331 /* Establish.app */;
@@ -398,6 +505,7 @@
 			mainGroup = 83425AEA275E548F0090B331;
 			packageReferences = (
 				E8B99266276FDC7F00D9A101 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E8BFA1982795CACD00B57A7A /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 			);
 			productRefGroup = 83425AF4275E548F0090B331 /* Products */;
 			projectDirPath = "";
@@ -443,27 +551,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E9E37827996F830040CE1B /* CreateAccountCoordinator.swift in Sources */,
 				83B0AF0C275E665000A0242D /* EnqueuingCoordinator.swift in Sources */,
-				E84A08EF276B83C900A745CD /* WelcomeViewModel.swift in Sources */,
 				83B0AF1E275E667A00A0242D /* AppFlow.swift in Sources */,
+				E8E9E4B12799A6700040CE1B /* HomeViewModel.swift in Sources */,
 				83425AF9275E548F0090B331 /* SceneDelegate.swift in Sources */,
-				E8E049A7276B74A300A78294 /* WelcomeView.swift in Sources */,
+				E8BFA19D2795CD0800B57A7A /* UserDefaultsUtils.swift in Sources */,
 				83B0AF19275E665E00A0242D /* AppDelegate.swift in Sources */,
 				E84A08F2276B95AE00A745CD /* ProgressBarView.swift in Sources */,
-				E8E049A9276B75D700A78294 /* WelcomeCoordinator.swift in Sources */,
+				E8BFA1972795C93300B57A7A /* LoginViewModel.swift in Sources */,
+				E8B9931827762C1A00D9A101 /* CreateAccountView.swift in Sources */,
 				83B0AEFF275E663700A0242D /* LoginCoordinator.swift in Sources */,
 				83B0AF18275E665E00A0242D /* AppDelegateAccessProtocol.swift in Sources */,
 				83B0AF00275E663700A0242D /* LoginView.swift in Sources */,
 				83B0AF11275E665000A0242D /* AppContext.swift in Sources */,
+				E8E9E3712798666C0040CE1B /* CreateAccountViewModel.swift in Sources */,
 				83B0AF1D275E667A00A0242D /* AppFlowCoordinator.swift in Sources */,
+				E8BFA1952795C66E00B57A7A /* LabelledDivider.swift in Sources */,
+				E8E9E4AF2799A64A0040CE1B /* HomeView.swift in Sources */,
+				E8BFA1932795BEFA00B57A7A /* CheckboxView.swift in Sources */,
 				83B0AF0F275E665000A0242D /* ThemeManagerAccessProtocol.swift in Sources */,
 				E84A08F4276B95ED00A745CD /* PasswordStrengthView.swift in Sources */,
 				83B0AF12275E665000A0242D /* AppContextAccessProtocol.swift in Sources */,
 				83B0AF0E275E665000A0242D /* ThemeManagerTypes.swift in Sources */,
-				E8B99272276FDD1100D9A101 /* SignUpHandler.swift in Sources */,
+				E8B99272276FDD1100D9A101 /* CreateAccountHandler.swift in Sources */,
+				E8E9E2D527982A400040CE1B /* LoginHandler.swift in Sources */,
 				83B0AF17275E665E00A0242D /* AppDelegateProtocol.swift in Sources */,
 				83B0AF10275E665000A0242D /* ThemeManager.swift in Sources */,
+				E8E9E37C279970A00040CE1B /* InviteFriendsCoordinator.swift in Sources */,
+				E8E9E2D7279859500040CE1B /* ModalView.swift in Sources */,
+				E8E9E37A279970940040CE1B /* InviteFriendsViewModel.swift in Sources */,
 				83B0AF0D275E665000A0242D /* Coordinator.swift in Sources */,
+				E8E9E374279868150040CE1B /* InviteFriendsView.swift in Sources */,
+				E8E9E4B32799A6ED0040CE1B /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,8 +591,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A6C4262799B29F00DF50E3 /* LoginViewModelTests.swift in Sources */,
+				E8A6C42F2799D07100DF50E3 /* InviteFriendsCoordinatorMock.swift in Sources */,
+				E8A6C42D2799D04D00DF50E3 /* InviteFriendsViewModelTests.swift in Sources */,
+				E8A6C4232799AA3900DF50E3 /* CreateAccountCoordinatorMock.swift in Sources */,
 				E8B9931227711DFD00D9A101 /* XCTestCase+GWT.swift in Sources */,
-				E8B9927727711C3600D9A101 /* WelcomeViewModelTests.swift in Sources */,
+				E8A6C4282799B6C000DF50E3 /* LoginCoordinatorMock.swift in Sources */,
+				E8A6C42A2799CA3200DF50E3 /* LoginHandlerTests.swift in Sources */,
+				E8B9927727711C3600D9A101 /* CreateAccountViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +758,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Establish/Establish.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Establish/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -652,6 +779,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Establish/Establish.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Establish/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -797,6 +925,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		E8BFA1982795CACD00B57A7A /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -824,6 +960,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E8B99266276FDC7F00D9A101 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseFirestoreCombine-Community";
+		};
+		E8BFA1992795CACD00B57A7A /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8BFA1982795CACD00B57A7A /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

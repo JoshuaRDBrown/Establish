@@ -24,7 +24,10 @@ public final class AppFlow: AppContextAccessProtocol {
     }
 
     func start() {
-        //coordinator.showLogin()
-        coordinator.showWelcome()
+        if appContext.isFirstLaunch {
+            coordinator.showCreateAccount()
+        } else {
+            coordinator.showLogin()
+        }
     }
 }

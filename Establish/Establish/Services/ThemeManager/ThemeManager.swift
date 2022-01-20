@@ -34,6 +34,8 @@ public class ThemeManager {
             return Color(UIColor(named: "primarySurface")!)
         case .greyBackground:
             return .gray
+        case .checkbox:
+            return Color(UIColor(named: "checkbox")!)
         }
     }
 }

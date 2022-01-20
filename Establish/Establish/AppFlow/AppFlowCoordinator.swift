@@ -21,8 +21,8 @@ public final class AppFlowCoordinator {
         window.rootViewController = vc
     }
     
-    func showWelcome() {
-        let vc = WelcomeCoordinator().instantiate()
+    func showCreateAccount() {
+        let vc = CreateAccountCoordinator().instantiate()
         window.rootViewController = vc
     }
 }

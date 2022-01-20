@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>39701391427-aiq7m8accgnrfmcbb94dtlhmllitmc8o.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.39701391427-aiq7m8accgnrfmcbb94dtlhmllitmc8o</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAUb-vqOZ6lOkCEyRX_j48gBOCKxDtuoaI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>39701391427</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Joshua-Brown.Establish</string>
+	<key>PROJECT_ID</key>
+	<string>establish-40a91</string>
+	<key>STORAGE_BUCKET</key>
+	<string>establish-40a91.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:39701391427:ios:dacc16ab72f704a8704cf6</string>
+</dict>
+</plist>
