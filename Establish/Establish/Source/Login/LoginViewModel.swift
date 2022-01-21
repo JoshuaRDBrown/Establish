@@ -58,9 +58,21 @@ final class LoginViewModel: ObservableObject {
     
     func loginWithApple(creds: AuthCredential) {
         loginHandler.login(credentials: creds)
-            .sink(receiveCompletion: { completion in
+            .sink(receiveCompletion: { [weak self] completion in
                 if case let .failure(error) = completion {
-                    self.loginError = error.localizedDescription
+                    self?.loginError = error.localizedDescription
+                }
+            }, receiveValue: { [weak self] _ in
+                self?.coordinator.enqueue(with: .home, animated: true)
+            })
+            .store(in: &subscriptions)
+    }
+    
+    func loginWithGoogle() {
+        loginHandler.login()
+            .sink(receiveCompletion: { [weak self] completion in
+                if case let .failure(error) = completion {
+                    self?.loginError = error.localizedDescription
                 }
             }, receiveValue: { [weak self] _ in
                 self?.coordinator.enqueue(with: .home, animated: true)

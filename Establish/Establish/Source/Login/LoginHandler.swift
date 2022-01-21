@@ -7,10 +7,17 @@
 
 import Foundation
 import Combine
-import FirebaseAuth
+import Firebase
+import GoogleSignIn
 import CryptoKit
 
-final class LoginHandler {
+final class LoginHandler: AppDelegateAccessProtocol {
+    
+    enum LoginError: Error {
+        case clientIDNotFound
+        case googleUserAuthFailed
+        case unknown
+    }
     
     func login(email: String, password: String) -> Future<AuthDataResult, Error> {
         return Future { promise in
@@ -37,6 +44,44 @@ final class LoginHandler {
                     return
                 }
             }
+        }
+    }
+    
+    func login() -> Future<AuthDataResult, Error> {
+        return Future { promise in
+            guard let clientID = FirebaseApp.app()?.options.clientID else {
+                promise(.failure(LoginError.clientIDNotFound))
+                return
+            }
+            let config = GIDConfiguration(clientID: clientID)
+            
+            GIDSignIn.sharedInstance.signIn(with: config, presenting: self.rootViewController, callback: { user, error in
+                
+                if let error = error {
+                    promise(.failure(error))
+                    return
+                }
+                
+                guard let auth = user?.authentication, let idToken = auth.idToken else {
+                    promise(.failure(LoginError.googleUserAuthFailed))
+                    return
+                }
+                
+                let credentials = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: auth.accessToken)
+                
+                Auth.auth().signIn(with: credentials, completion: { result, error in
+                    
+                    if let error = error {
+                        promise(.failure(error))
+                    }
+                    
+                    if let user = result {
+                        promise(.success(user))
+                    }
+                    
+                    promise(.failure(LoginError.unknown))
+                })
+            })
         }
     }
     

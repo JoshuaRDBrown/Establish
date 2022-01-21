@@ -49,9 +49,9 @@ class CreateAccountViewModel: ObservableObject {
                 guard value != "" else { return }
                 guard let self = self else { return }
                 self.isEmailUnique(emailAddress: value)
-                    .sink(receiveCompletion: { completion in
+                    .sink(receiveCompletion: { [weak self] completion in
                         if case let .failure(error) = completion {
-                            self.emailError = error.localizedDescription
+                            self?.emailError = error.localizedDescription
                         }
                     }, receiveValue: { isUnique in
                         let isValid = self.isEmailValid(emailAddress: value)

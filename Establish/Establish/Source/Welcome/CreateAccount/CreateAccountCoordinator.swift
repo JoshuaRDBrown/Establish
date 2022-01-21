@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-final class CreateAccountCoordinator: EnqueuingCoordinator {
+final class CreateAccountCoordinator: EnqueuingCoordinator, AppContextAccessProtocol {
     typealias EnqueueContextType = CreateAccountViewModel.RouteType
     
     weak var rootHostingController: UIHostingController<CreateAccountView>?
@@ -26,8 +26,13 @@ final class CreateAccountCoordinator: EnqueuingCoordinator {
     func enqueue(with context: CreateAccountViewModel.RouteType, animated: Bool) {
         switch context {
         case .login:
-            let vc = LoginCoordinator().instantiate()
-            rootHostingController?.present(vc, animated: true, completion: nil)
+            //Ensures user does not dismiss to no view if they did not load create account from the login screen
+            if appContext.isFirstLaunch {
+                let vc = LoginCoordinator().instantiate()
+                rootHostingController?.present(vc, animated: true, completion: nil)
+            } else {
+                rootHostingController?.dismiss(animated: true, completion: nil)
+            }
         case .inviteFriends:
             let vc = InviteFriendsCoordinator().instantiate()
             rootHostingController?.present(vc, animated: true, completion: nil)

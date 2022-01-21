@@ -14,4 +14,5 @@ public enum ThemeManagerColor {
     case primaryButtonDisabled
     case greyBackground
     case checkbox
+    case textDisabled
 }

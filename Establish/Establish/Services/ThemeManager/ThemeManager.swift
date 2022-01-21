@@ -36,6 +36,8 @@ public class ThemeManager {
             return .gray
         case .checkbox:
             return Color(UIColor(named: "checkbox")!)
+        case .textDisabled:
+            return Color(UIColor(named: "textDisabled")!)
         }
     }
 }
