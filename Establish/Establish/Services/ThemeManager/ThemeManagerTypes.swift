@@ -9,7 +9,7 @@ public enum ThemeManagerColor {
     case textPrimary
     case textSecondary
     case brandGreen
-    case primarySurface
+    case primaryBackground
     case primaryButton
     case primaryButtonDisabled
     case greyBackground

@@ -30,8 +30,8 @@ public class ThemeManager {
             return Color(UIColor(named: "primaryButton")!)
         case .primaryButtonDisabled:
             return Color(UIColor(named: "primaryButtonDisabled")!)
-        case .primarySurface:
-            return Color(UIColor(named: "primarySurface")!)
+        case .primaryBackground:
+            return Color(UIColor(named: "primaryBackground")!)
         case .greyBackground:
             return .gray
         case .checkbox:

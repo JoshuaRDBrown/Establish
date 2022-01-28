@@ -25,4 +25,9 @@ public final class AppFlowCoordinator {
         let vc = CreateAccountCoordinator().instantiate()
         window.rootViewController = vc
     }
+    
+    func showHomePage() {
+        let vc = HomeCoordinator().instantiate()
+        window.rootViewController = vc
+    }
 }
