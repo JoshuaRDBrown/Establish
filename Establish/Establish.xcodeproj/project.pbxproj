@@ -28,6 +28,10 @@
 		83B0AF1E275E667A00A0242D /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0AF1C275E667A00A0242D /* AppFlow.swift */; };
 		E84A08F2276B95AE00A745CD /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A08F1276B95AE00A745CD /* ProgressBarView.swift */; };
 		E84A08F4276B95ED00A745CD /* PasswordStrengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A08F3276B95ED00A745CD /* PasswordStrengthView.swift */; };
+		E881F0AB27AD79CD00492237 /* EventTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E881F0AA27AD79CD00492237 /* EventTag.swift */; };
+		E881F0AE27AD856700492237 /* Date+FormattedDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E881F0AD27AD856700492237 /* Date+FormattedDay.swift */; };
+		E881F14927AD8C7600492237 /* InitialDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E881F14827AD8C7500492237 /* InitialDetailsView.swift */; };
+		E881F14B27AD8D4B00492237 /* AdditionalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E881F14A27AD8D4B00492237 /* AdditionalDetailsView.swift */; };
 		E888138C27A4461D002DF4C0 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888138B27A4461D002DF4C0 /* CreateEventView.swift */; };
 		E888139027A446CF002DF4C0 /* CreateEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888138F27A446CF002DF4C0 /* CreateEventViewModel.swift */; };
 		E888139227A449A0002DF4C0 /* CreateEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888139127A449A0002DF4C0 /* CreateEventCoordinator.swift */; };
@@ -114,6 +118,10 @@
 		83B0AF1C275E667A00A0242D /* AppFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		E84A08F1276B95AE00A745CD /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		E84A08F3276B95ED00A745CD /* PasswordStrengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStrengthView.swift; sourceTree = "<group>"; };
+		E881F0AA27AD79CD00492237 /* EventTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTag.swift; sourceTree = "<group>"; };
+		E881F0AD27AD856700492237 /* Date+FormattedDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FormattedDay.swift"; sourceTree = "<group>"; };
+		E881F14827AD8C7500492237 /* InitialDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialDetailsView.swift; sourceTree = "<group>"; };
+		E881F14A27AD8D4B00492237 /* AdditionalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalDetailsView.swift; sourceTree = "<group>"; };
 		E888138B27A4461D002DF4C0 /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
 		E888138F27A446CF002DF4C0 /* CreateEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewModel.swift; sourceTree = "<group>"; };
 		E888139127A449A0002DF4C0 /* CreateEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventCoordinator.swift; sourceTree = "<group>"; };
@@ -251,6 +259,7 @@
 		83B0AEFB275E663700A0242D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E881F0AC27AD854000492237 /* Extensions */,
 				E888138E27A446A4002DF4C0 /* CreateEvent */,
 				E8CB78A627A1B9B600D49FF1 /* Structs */,
 				E8E9E4AD2799A63F0040CE1B /* Home */,
@@ -339,9 +348,27 @@
 			path = Reuseables;
 			sourceTree = "<group>";
 		};
+		E881F0AC27AD854000492237 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E881F0AD27AD856700492237 /* Date+FormattedDay.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E881F14727AD8C4100492237 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E881F14827AD8C7500492237 /* InitialDetailsView.swift */,
+				E881F14A27AD8D4B00492237 /* AdditionalDetailsView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		E888138E27A446A4002DF4C0 /* CreateEvent */ = {
 			isa = PBXGroup;
 			children = (
+				E881F14727AD8C4100492237 /* Components */,
 				E888138B27A4461D002DF4C0 /* CreateEventView.swift */,
 				E888138F27A446CF002DF4C0 /* CreateEventViewModel.swift */,
 				E888139127A449A0002DF4C0 /* CreateEventCoordinator.swift */,
@@ -384,6 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				E8A6C4CA279AFDDA00DF50E3 /* ButtonStyle.swift */,
+				E881F0AA27AD79CD00492237 /* EventTag.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -623,7 +651,10 @@
 				83B0AF1E275E667A00A0242D /* AppFlow.swift in Sources */,
 				E8E9E4B12799A6700040CE1B /* HomeViewModel.swift in Sources */,
 				83425AF9275E548F0090B331 /* SceneDelegate.swift in Sources */,
+				E881F0AB27AD79CD00492237 /* EventTag.swift in Sources */,
+				E881F14B27AD8D4B00492237 /* AdditionalDetailsView.swift in Sources */,
 				E8BFA19D2795CD0800B57A7A /* UserDefaultsUtils.swift in Sources */,
+				E881F14927AD8C7600492237 /* InitialDetailsView.swift in Sources */,
 				83B0AF19275E665E00A0242D /* AppDelegate.swift in Sources */,
 				E8A6C4CB279AFDDA00DF50E3 /* ButtonStyle.swift in Sources */,
 				E84A08F2276B95AE00A745CD /* ProgressBarView.swift in Sources */,
@@ -644,6 +675,7 @@
 				E84A08F4276B95ED00A745CD /* PasswordStrengthView.swift in Sources */,
 				83B0AF12275E665000A0242D /* AppContextAccessProtocol.swift in Sources */,
 				83B0AF0E275E665000A0242D /* ThemeManagerTypes.swift in Sources */,
+				E881F0AE27AD856700492237 /* Date+FormattedDay.swift in Sources */,
 				E8B99272276FDD1100D9A101 /* CreateAccountHandler.swift in Sources */,
 				E888139027A446CF002DF4C0 /* CreateEventViewModel.swift in Sources */,
 				E8E9E2D527982A400040CE1B /* LoginHandler.swift in Sources */,

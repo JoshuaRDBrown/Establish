@@ -29,7 +29,10 @@ class CreateEventCoordinator: EnqueuingCoordinator {
         switch context {
         case .monzoBlogWebView(let url):
             let vc = UIHostingController(rootView: WebView(request: URLRequest(url: URL(string: url)!)))
+            vc.modalPresentationStyle = .fullScreen
             rootHostingController?.present(vc, animated: true, completion: nil)
+        case .dismiss:
+            rootHostingController?.dismiss(animated: true, completion: nil)
         }
     }
 }
