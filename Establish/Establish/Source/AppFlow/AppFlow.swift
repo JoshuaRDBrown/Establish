@@ -26,6 +26,8 @@ public final class AppFlow: AppContextAccessProtocol {
     func start() {
         if appContext.isFirstLaunch {
             coordinator.showCreateAccount()
+        } else if appContext.userObject != nil {
+            coordinator.showHomePage()
         } else {
             coordinator.showLogin()
         }

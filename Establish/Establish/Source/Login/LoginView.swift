@@ -25,26 +25,25 @@ struct LoginView: View, ThemeManagerAccessProtocol {
     
     var body: some View {
         VStack(spacing: .zero) {
-            logo
+            Spacer()
             loginForm
+            Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(themeManager.color(for: .brandGreen))
-        .ignoresSafeArea()
-    }
-    
-    private var logo: some View {
-        VStack(spacing: .zero) {
-            Text("Establish")
-                .font(.largeTitle)
-            Text("Organise social events, with ease")
-                .font(.system(size: sizes.titleFontSize))
-        }
-        .foregroundColor(.white)
+        .background(themeManager.color(for: .brandGreen).edgesIgnoringSafeArea(.all))
     }
     
     private var loginForm: some View {
         VStack(spacing: .zero) {
+            
+            Text("Establish")
+                .font(.largeTitle)
+                .foregroundColor(themeManager.color(for: .brandGreen))
+            Text("Organise social events, with ease")
+                .font(.system(size: sizes.titleFontSize))
+                .foregroundColor(themeManager.color(for: .textSecondary))
+                .padding(.bottom, sizes.largePadding)
+            
             TextField("Email Address", text: $viewModel.emailAddress)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.bottom, sizes.mediumPadding)

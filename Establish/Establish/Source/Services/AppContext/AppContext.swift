@@ -26,4 +26,8 @@ public final class AppContext {
         UserDefaultsUtils.shared.setValue(for: "appHasBeenLaunchedOnce", value: true)
         return true
     }
+    
+    public var themeManager: ThemeManager {
+        ThemeManager.shared
+    }
 }

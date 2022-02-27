@@ -13,17 +13,30 @@ public enum ButtonStyle {
     public struct Primary: SwiftUI.ButtonStyle {
         let themeManager: ThemeManager
         let isDisabled: Bool
+        let isActionButton: Bool
         
-        public init(themeManager: ThemeManager, isDisabled: Bool = false) {
+        public init(themeManager: ThemeManager, isDisabled: Bool = false, isActionButton: Bool = false) {
             self.themeManager = themeManager
             self.isDisabled = isDisabled
+            self.isActionButton = isActionButton
+        }
+        
+        private var buttonColor: Color {
+            
+            if self.isDisabled { return .gray }
+            
+            if isActionButton {
+                return .orange
+            }
+            
+            return themeManager.color(for: .primaryButton)
         }
         
         public func makeBody(configuration: Self.Configuration) -> some View {
             configuration.label
                 .frame(maxWidth: .infinity, minHeight: 30)
                 .font(.headline)
-                .background(isDisabled ? .gray : themeManager.color(for: .primaryButton))
+                .background(buttonColor)
                 .cornerRadius(8)
                 .foregroundColor(isDisabled ? themeManager.color(for: .textDisabled) : .white)
                 .overlay(
