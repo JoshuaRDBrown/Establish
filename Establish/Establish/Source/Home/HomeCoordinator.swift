@@ -27,7 +27,7 @@ class HomeCoordinator: EnqueuingCoordinator {
     func enqueue(with context: HomeViewModel.RouteType, animated: Bool) {
         switch context {
         case .createEvent:
-            let vc = CreateEventCoordinator().instantiate()
+            let vc = CreateNewEventCoordinator().instantiate()
             rootHostingController?.present(vc, animated: true, completion: nil)
         }
     }

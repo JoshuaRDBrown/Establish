@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72282C0B27AF01D700952855 /* LocationSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72282C0A27AF01D700952855 /* LocationSearchService.swift */; };
+		7244675827B06B65009F5507 /* SharableCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7244675727B06B65009F5507 /* SharableCodeView.swift */; };
+		7244675B27B06CE4009F5507 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7244675A27B06CE4009F5507 /* Lottie */; };
+		7244675F27B06E1F009F5507 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 7244675E27B06E1F009F5507 /* success.json */; };
+		7244676127B06E67009F5507 /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7244676027B06E67009F5507 /* LottieAnimationView.swift */; };
+		72CD544327CBD8A100303DCC /* CreateNewEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD544227CBD8A100303DCC /* CreateNewEventViewModel.swift */; };
+		72CD544927CBE12D00303DCC /* NewEventConfigurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD544827CBE12D00303DCC /* NewEventConfigurationViewModel.swift */; };
+		72CD544B27CBE3BB00303DCC /* NewEventConfigurationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD544A27CBE3BB00303DCC /* NewEventConfigurationCoordinator.swift */; };
+		72CD544D27CBE88300303DCC /* UpdateFirestoreHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD544C27CBE88300303DCC /* UpdateFirestoreHandler.swift */; };
+		72CD545127CBEC6900303DCC /* EventPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD545027CBEC6900303DCC /* EventPayload.swift */; };
+		72CD545527CBF49D00303DCC /* GenericHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD545427CBF49D00303DCC /* GenericHelpers.swift */; };
 		83425AF9275E548F0090B331 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83425AF8275E548F0090B331 /* SceneDelegate.swift */; };
 		83425AFD275E54910090B331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83425AFC275E54910090B331 /* Assets.xcassets */; };
 		83425B00275E54910090B331 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83425AFF275E54910090B331 /* Preview Assets.xcassets */; };
@@ -30,11 +41,9 @@
 		E84A08F4276B95ED00A745CD /* PasswordStrengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A08F3276B95ED00A745CD /* PasswordStrengthView.swift */; };
 		E881F0AB27AD79CD00492237 /* EventTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E881F0AA27AD79CD00492237 /* EventTag.swift */; };
 		E881F0AE27AD856700492237 /* Date+FormattedDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E881F0AD27AD856700492237 /* Date+FormattedDay.swift */; };
-		E881F14927AD8C7600492237 /* InitialDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E881F14827AD8C7500492237 /* InitialDetailsView.swift */; };
-		E881F14B27AD8D4B00492237 /* AdditionalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E881F14A27AD8D4B00492237 /* AdditionalDetailsView.swift */; };
-		E888138C27A4461D002DF4C0 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888138B27A4461D002DF4C0 /* CreateEventView.swift */; };
-		E888139027A446CF002DF4C0 /* CreateEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888138F27A446CF002DF4C0 /* CreateEventViewModel.swift */; };
-		E888139227A449A0002DF4C0 /* CreateEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888139127A449A0002DF4C0 /* CreateEventCoordinator.swift */; };
+		E881F14927AD8C7600492237 /* CreateNewEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E881F14827AD8C7500492237 /* CreateNewEventView.swift */; };
+		E881F14B27AD8D4B00492237 /* NewEventConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E881F14A27AD8D4B00492237 /* NewEventConfigurationView.swift */; };
+		E888139227A449A0002DF4C0 /* CreateNewEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888139127A449A0002DF4C0 /* CreateNewEventCoordinator.swift */; };
 		E888139427A4559E002DF4C0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888139327A4559E002DF4C0 /* WebView.swift */; };
 		E8A6C4232799AA3900DF50E3 /* CreateAccountCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6C4222799AA3900DF50E3 /* CreateAccountCoordinatorMock.swift */; };
 		E8A6C4262799B29F00DF50E3 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6C4252799B29F00DF50E3 /* LoginViewModelTests.swift */; };
@@ -60,7 +69,6 @@
 		E8BFA19A2795CACD00B57A7A /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = E8BFA1992795CACD00B57A7A /* SwiftKeychainWrapper */; };
 		E8BFA19D2795CD0800B57A7A /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BFA19C2795CD0800B57A7A /* UserDefaultsUtils.swift */; };
 		E8CB78A527A1987D00D49FF1 /* EventListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CB78A427A1987D00D49FF1 /* EventListItem.swift */; };
-		E8CB78A827A1B9CB00D49FF1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CB78A727A1B9CB00D49FF1 /* Event.swift */; };
 		E8E9E2D527982A400040CE1B /* LoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9E2D427982A3F0040CE1B /* LoginHandler.swift */; };
 		E8E9E2D7279859500040CE1B /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9E2D6279859500040CE1B /* ModalView.swift */; };
 		E8E9E3712798666C0040CE1B /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9E3702798666C0040CE1B /* CreateAccountViewModel.swift */; };
@@ -91,6 +99,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72282C0A27AF01D700952855 /* LocationSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchService.swift; sourceTree = "<group>"; };
+		7244675727B06B65009F5507 /* SharableCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharableCodeView.swift; sourceTree = "<group>"; };
+		7244675E27B06E1F009F5507 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
+		7244676027B06E67009F5507 /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
+		72CD544227CBD8A100303DCC /* CreateNewEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewEventViewModel.swift; sourceTree = "<group>"; };
+		72CD544827CBE12D00303DCC /* NewEventConfigurationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventConfigurationViewModel.swift; sourceTree = "<group>"; };
+		72CD544A27CBE3BB00303DCC /* NewEventConfigurationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventConfigurationCoordinator.swift; sourceTree = "<group>"; };
+		72CD544C27CBE88300303DCC /* UpdateFirestoreHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateFirestoreHandler.swift; sourceTree = "<group>"; };
+		72CD545027CBEC6900303DCC /* EventPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPayload.swift; sourceTree = "<group>"; };
+		72CD545427CBF49D00303DCC /* GenericHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericHelpers.swift; sourceTree = "<group>"; };
 		83425AF3275E548F0090B331 /* Establish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Establish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83425AF8275E548F0090B331 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		83425AFC275E54910090B331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,11 +138,9 @@
 		E84A08F3276B95ED00A745CD /* PasswordStrengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStrengthView.swift; sourceTree = "<group>"; };
 		E881F0AA27AD79CD00492237 /* EventTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTag.swift; sourceTree = "<group>"; };
 		E881F0AD27AD856700492237 /* Date+FormattedDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FormattedDay.swift"; sourceTree = "<group>"; };
-		E881F14827AD8C7500492237 /* InitialDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialDetailsView.swift; sourceTree = "<group>"; };
-		E881F14A27AD8D4B00492237 /* AdditionalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalDetailsView.swift; sourceTree = "<group>"; };
-		E888138B27A4461D002DF4C0 /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
-		E888138F27A446CF002DF4C0 /* CreateEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewModel.swift; sourceTree = "<group>"; };
-		E888139127A449A0002DF4C0 /* CreateEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventCoordinator.swift; sourceTree = "<group>"; };
+		E881F14827AD8C7500492237 /* CreateNewEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewEventView.swift; sourceTree = "<group>"; };
+		E881F14A27AD8D4B00492237 /* NewEventConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventConfigurationView.swift; sourceTree = "<group>"; };
+		E888139127A449A0002DF4C0 /* CreateNewEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewEventCoordinator.swift; sourceTree = "<group>"; };
 		E888139327A4559E002DF4C0 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		E8A6C4222799AA3900DF50E3 /* CreateAccountCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountCoordinatorMock.swift; sourceTree = "<group>"; };
 		E8A6C4252799B29F00DF50E3 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
@@ -144,7 +160,6 @@
 		E8BFA19C2795CD0800B57A7A /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
 		E8BFA19E2796C8EC00B57A7A /* Establish.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Establish.entitlements; sourceTree = "<group>"; };
 		E8CB78A427A1987D00D49FF1 /* EventListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListItem.swift; sourceTree = "<group>"; };
-		E8CB78A727A1B9CB00D49FF1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		E8E9E2D427982A3F0040CE1B /* LoginHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHandler.swift; sourceTree = "<group>"; };
 		E8E9E2D6279859500040CE1B /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		E8E9E3702798666C0040CE1B /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
@@ -169,6 +184,7 @@
 				E8B99270276FDC7F00D9A101 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				E8B9926A276FDC7F00D9A101 /* FirebaseAuth in Frameworks */,
 				E8A6C5FE279B046500DF50E3 /* GoogleSignIn in Frameworks */,
+				7244675B27B06CE4009F5507 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +205,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7244675C27B06E01009F5507 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7244675D27B06E0E009F5507 /* Lottie */,
+				83425AFC275E54910090B331 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7244675D27B06E0E009F5507 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				7244675E27B06E1F009F5507 /* success.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		72CD544127CBD87D00303DCC /* CreateNewEvent */ = {
+			isa = PBXGroup;
+			children = (
+				E881F14827AD8C7500492237 /* CreateNewEventView.swift */,
+				E888139127A449A0002DF4C0 /* CreateNewEventCoordinator.swift */,
+				72CD544227CBD8A100303DCC /* CreateNewEventViewModel.swift */,
+			);
+			path = CreateNewEvent;
+			sourceTree = "<group>";
+		};
+		72CD544527CBE09600303DCC /* NewEventConfigurationView */ = {
+			isa = PBXGroup;
+			children = (
+				E881F14A27AD8D4B00492237 /* NewEventConfigurationView.swift */,
+				72CD544A27CBE3BB00303DCC /* NewEventConfigurationCoordinator.swift */,
+				72CD544827CBE12D00303DCC /* NewEventConfigurationViewModel.swift */,
+			);
+			path = NewEventConfigurationView;
+			sourceTree = "<group>";
+		};
+		72CD544E27CBEB4800303DCC /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				72CD544C27CBE88300303DCC /* UpdateFirestoreHandler.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		72CD544F27CBEC5000303DCC /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				72CD545027CBEC6900303DCC /* EventPayload.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		72CD545627CBF6AD00303DCC /* NewEventConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewEventConfiguration;
+			sourceTree = "<group>";
+		};
+		72CD545727CBF6C300303DCC /* CreateNewEvent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CreateNewEvent;
+			sourceTree = "<group>";
+		};
 		83425AEA275E548F0090B331 = {
 			isa = PBXGroup;
 			children = (
@@ -215,11 +298,8 @@
 				E8BFA19E2796C8EC00B57A7A /* Establish.entitlements */,
 				E8B99273276FE53600D9A101 /* GoogleService-Info.plist */,
 				83B0AEFB275E663700A0242D /* Source */,
-				83B0AF1A275E667A00A0242D /* AppFlow */,
-				83B0AF13275E665E00A0242D /* AppDelegate */,
-				83B0AF01275E665000A0242D /* Services */,
 				83425AF8275E548F0090B331 /* SceneDelegate.swift */,
-				83425AFC275E54910090B331 /* Assets.xcassets */,
+				7244675C27B06E01009F5507 /* Assets */,
 				83425B01275E54910090B331 /* LaunchScreen.storyboard */,
 				83425B04275E54910090B331 /* Info.plist */,
 				83425AFE275E54910090B331 /* Preview Content */,
@@ -238,6 +318,8 @@
 		83425B0C275E54910090B331 /* EstablishTests */ = {
 			isa = PBXGroup;
 			children = (
+				72CD545727CBF6C300303DCC /* CreateNewEvent */,
+				72CD545627CBF6AD00303DCC /* NewEventConfiguration */,
 				E8A6C42B2799D03800DF50E3 /* InviteFriends */,
 				E8A6C4242799B28E00DF50E3 /* Login */,
 				E8B9931027711DE800D9A101 /* TestHelpers */,
@@ -259,9 +341,12 @@
 		83B0AEFB275E663700A0242D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				72CD544F27CBEC5000303DCC /* DataModels */,
+				83B0AF01275E665000A0242D /* Services */,
+				83B0AF13275E665E00A0242D /* AppDelegate */,
+				83B0AF1A275E667A00A0242D /* AppFlow */,
 				E881F0AC27AD854000492237 /* Extensions */,
 				E888138E27A446A4002DF4C0 /* CreateEvent */,
-				E8CB78A627A1B9B600D49FF1 /* Structs */,
 				E8E9E4AD2799A63F0040CE1B /* Home */,
 				E84A08F0276B959B00A745CD /* Reuseables */,
 				E8E049A5276B748000A78294 /* Welcome */,
@@ -284,6 +369,7 @@
 		83B0AF01275E665000A0242D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				72CD544E27CBEB4800303DCC /* Firebase */,
 				E8BFA19B2795CCF300B57A7A /* Helpers */,
 				83B0AF02275E665000A0242D /* Coordinator */,
 				83B0AF05275E665000A0242D /* ThemeManager */,
@@ -359,8 +445,9 @@
 		E881F14727AD8C4100492237 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E881F14827AD8C7500492237 /* InitialDetailsView.swift */,
-				E881F14A27AD8D4B00492237 /* AdditionalDetailsView.swift */,
+				72CD544527CBE09600303DCC /* NewEventConfigurationView */,
+				72CD544127CBD87D00303DCC /* CreateNewEvent */,
+				7244675727B06B65009F5507 /* SharableCodeView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -369,9 +456,6 @@
 			isa = PBXGroup;
 			children = (
 				E881F14727AD8C4100492237 /* Components */,
-				E888138B27A4461D002DF4C0 /* CreateEventView.swift */,
-				E888138F27A446CF002DF4C0 /* CreateEventViewModel.swift */,
-				E888139127A449A0002DF4C0 /* CreateEventCoordinator.swift */,
 			);
 			path = CreateEvent;
 			sourceTree = "<group>";
@@ -403,6 +487,7 @@
 				E8E9E2D6279859500040CE1B /* ModalView.swift */,
 				E84A08F1276B95AE00A745CD /* ProgressBarView.swift */,
 				E888139327A4559E002DF4C0 /* WebView.swift */,
+				7244676027B06E67009F5507 /* LottieAnimationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -449,6 +534,8 @@
 			isa = PBXGroup;
 			children = (
 				E8BFA19C2795CD0800B57A7A /* UserDefaultsUtils.swift */,
+				72282C0A27AF01D700952855 /* LocationSearchService.swift */,
+				72CD545427CBF49D00303DCC /* GenericHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -459,14 +546,6 @@
 				E8CB78A427A1987D00D49FF1 /* EventListItem.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		E8CB78A627A1B9B600D49FF1 /* Structs */ = {
-			isa = PBXGroup;
-			children = (
-				E8CB78A727A1B9CB00D49FF1 /* Event.swift */,
-			);
-			path = Structs;
 			sourceTree = "<group>";
 		};
 		E8E049A5276B748000A78294 /* Welcome */ = {
@@ -523,6 +602,7 @@
 				E8B9926F276FDC7F00D9A101 /* FirebaseFirestoreCombine-Community */,
 				E8BFA1992795CACD00B57A7A /* SwiftKeychainWrapper */,
 				E8A6C5FD279B046500DF50E3 /* GoogleSignIn */,
+				7244675A27B06CE4009F5507 /* Lottie */,
 			);
 			productName = Establish;
 			productReference = 83425AF3275E548F0090B331 /* Establish.app */;
@@ -599,6 +679,7 @@
 				E8B99266276FDC7F00D9A101 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				E8BFA1982795CACD00B57A7A /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 				E8A6C5FC279B046500DF50E3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				7244675927B06CE4009F5507 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 83425AF4275E548F0090B331 /* Products */;
 			projectDirPath = "";
@@ -617,6 +698,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83425B03275E54910090B331 /* LaunchScreen.storyboard in Resources */,
+				7244675F27B06E1F009F5507 /* success.json in Resources */,
 				E8B99274276FE53600D9A101 /* GoogleService-Info.plist in Resources */,
 				83425B00275E54910090B331 /* Preview Assets.xcassets in Resources */,
 				83425AFD275E54910090B331 /* Assets.xcassets in Resources */,
@@ -646,43 +728,49 @@
 			files = (
 				E8E9E37827996F830040CE1B /* CreateAccountCoordinator.swift in Sources */,
 				E888139427A4559E002DF4C0 /* WebView.swift in Sources */,
-				E888138C27A4461D002DF4C0 /* CreateEventView.swift in Sources */,
+				7244675827B06B65009F5507 /* SharableCodeView.swift in Sources */,
 				83B0AF0C275E665000A0242D /* EnqueuingCoordinator.swift in Sources */,
 				83B0AF1E275E667A00A0242D /* AppFlow.swift in Sources */,
 				E8E9E4B12799A6700040CE1B /* HomeViewModel.swift in Sources */,
 				83425AF9275E548F0090B331 /* SceneDelegate.swift in Sources */,
 				E881F0AB27AD79CD00492237 /* EventTag.swift in Sources */,
-				E881F14B27AD8D4B00492237 /* AdditionalDetailsView.swift in Sources */,
+				E881F14B27AD8D4B00492237 /* NewEventConfigurationView.swift in Sources */,
+				72282C0B27AF01D700952855 /* LocationSearchService.swift in Sources */,
 				E8BFA19D2795CD0800B57A7A /* UserDefaultsUtils.swift in Sources */,
-				E881F14927AD8C7600492237 /* InitialDetailsView.swift in Sources */,
+				E881F14927AD8C7600492237 /* CreateNewEventView.swift in Sources */,
 				83B0AF19275E665E00A0242D /* AppDelegate.swift in Sources */,
 				E8A6C4CB279AFDDA00DF50E3 /* ButtonStyle.swift in Sources */,
 				E84A08F2276B95AE00A745CD /* ProgressBarView.swift in Sources */,
+				72CD544B27CBE3BB00303DCC /* NewEventConfigurationCoordinator.swift in Sources */,
+				72CD544927CBE12D00303DCC /* NewEventConfigurationViewModel.swift in Sources */,
 				E8BFA1972795C93300B57A7A /* LoginViewModel.swift in Sources */,
+				7244676127B06E67009F5507 /* LottieAnimationView.swift in Sources */,
+				72CD544D27CBE88300303DCC /* UpdateFirestoreHandler.swift in Sources */,
 				E8B9931827762C1A00D9A101 /* CreateAccountView.swift in Sources */,
 				83B0AEFF275E663700A0242D /* LoginCoordinator.swift in Sources */,
 				83B0AF18275E665E00A0242D /* AppDelegateAccessProtocol.swift in Sources */,
 				83B0AF00275E663700A0242D /* LoginView.swift in Sources */,
 				83B0AF11275E665000A0242D /* AppContext.swift in Sources */,
-				E8CB78A827A1B9CB00D49FF1 /* Event.swift in Sources */,
 				E8E9E3712798666C0040CE1B /* CreateAccountViewModel.swift in Sources */,
 				83B0AF1D275E667A00A0242D /* AppFlowCoordinator.swift in Sources */,
+				72CD544327CBD8A100303DCC /* CreateNewEventViewModel.swift in Sources */,
 				E8BFA1952795C66E00B57A7A /* LabelledDivider.swift in Sources */,
 				E8E9E4AF2799A64A0040CE1B /* HomeView.swift in Sources */,
 				E8BFA1932795BEFA00B57A7A /* CheckboxView.swift in Sources */,
+				72CD545527CBF49D00303DCC /* GenericHelpers.swift in Sources */,
 				83B0AF0F275E665000A0242D /* ThemeManagerAccessProtocol.swift in Sources */,
-				E888139227A449A0002DF4C0 /* CreateEventCoordinator.swift in Sources */,
+				E888139227A449A0002DF4C0 /* CreateNewEventCoordinator.swift in Sources */,
 				E84A08F4276B95ED00A745CD /* PasswordStrengthView.swift in Sources */,
 				83B0AF12275E665000A0242D /* AppContextAccessProtocol.swift in Sources */,
 				83B0AF0E275E665000A0242D /* ThemeManagerTypes.swift in Sources */,
 				E881F0AE27AD856700492237 /* Date+FormattedDay.swift in Sources */,
 				E8B99272276FDD1100D9A101 /* CreateAccountHandler.swift in Sources */,
-				E888139027A446CF002DF4C0 /* CreateEventViewModel.swift in Sources */,
 				E8E9E2D527982A400040CE1B /* LoginHandler.swift in Sources */,
 				83B0AF17275E665E00A0242D /* AppDelegateProtocol.swift in Sources */,
 				83B0AF10275E665000A0242D /* ThemeManager.swift in Sources */,
 				E8E9E37C279970A00040CE1B /* InviteFriendsCoordinator.swift in Sources */,
 				E8E9E2D7279859500040CE1B /* ModalView.swift in Sources */,
+				72CD545127CBEC6900303DCC /* EventPayload.swift in Sources */,
 				E8E9E37A279970940040CE1B /* InviteFriendsViewModel.swift in Sources */,
 				83B0AF0D275E665000A0242D /* Coordinator.swift in Sources */,
 				E8E9E374279868150040CE1B /* InviteFriendsView.swift in Sources */,
@@ -1021,6 +1109,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7244675927B06CE4009F5507 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		E8A6C5FC279B046500DF50E3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
@@ -1048,6 +1144,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7244675A27B06CE4009F5507 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7244675927B06CE4009F5507 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 		E8A6C5FD279B046500DF50E3 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E8A6C5FC279B046500DF50E3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;

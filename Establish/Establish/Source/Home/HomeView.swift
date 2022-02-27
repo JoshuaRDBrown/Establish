@@ -16,7 +16,6 @@ struct HomeView: View, AppContextAccessProtocol, ThemeManagerAccessProtocol {
         self.viewModel = viewModel
     }
     
-    //TODO: - Create UI for Home screen 
     var body: some View {
         topbar
         Divider()
