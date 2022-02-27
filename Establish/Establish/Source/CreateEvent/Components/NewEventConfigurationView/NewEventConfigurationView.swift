@@ -132,9 +132,9 @@ struct NewEventConfigurationView: View {
     private var bottomButtons: some View {
         Section {
             VStack {
-                Button("Create", action: { viewModel.createEvent() })
+                Button("Create", action: viewModel.createEvent)
                     .buttonStyle(ButtonStyle.Primary(themeManager: self.themeManager, isDisabled: false))
-                Button("Back to initial details", action: { })
+                Button("Back to initial details", action: viewModel.didTapBack)
                     .foregroundColor(themeManager.color(for: .brandGreen))
             }
         }

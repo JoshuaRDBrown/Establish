@@ -22,19 +22,6 @@ struct HomeView: View, AppContextAccessProtocol, ThemeManagerAccessProtocol {
             .frame(height: 3)
             .background(themeManager.color(for: .brandGreen))
         VStack(spacing: 10) {
-//            Spacer()
-//            EventListItem(eventTitle: "Bowling", eventDate: "12/08/2022 @ 7PM", eventImageURL: "", mostRecentActionString: "Jim created a poll", amountAttending: 5, themeManager: self.themeManager)
-//                .padding(.horizontal, 15)
-//
-//            EventListItem(eventTitle: "Bowling", eventDate: "12/08/2022 @ 7PM", eventImageURL: "", mostRecentActionString: "Jim created a poll", amountAttending: 5, themeManager: self.themeManager)
-//                .padding(.horizontal, 15)
-//
-//            EventListItem(eventTitle: "Bowling", eventDate: "12/08/2022 @ 7PM", eventImageURL: "", mostRecentActionString: "Jim created a poll", amountAttending: 5, themeManager: self.themeManager)
-//                .padding(.horizontal, 15)
-//
-//            EventListItem(eventTitle: "Bowling", eventDate: "12/08/2022 @ 7PM", eventImageURL: "", mostRecentActionString: "Jim created a poll", amountAttending: 5, themeManager: self.themeManager)
-//                .padding(.horizontal, 15)
-            
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
