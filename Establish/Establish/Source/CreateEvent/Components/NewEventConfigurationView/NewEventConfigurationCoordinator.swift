@@ -34,8 +34,6 @@ class NewEventConfigurationCoordinator: EnqueuingCoordinator, AppContextAccessPr
             let request = URLRequest(url: url)
             let webView = UIHostingController(rootView: WebView(request: request))
             rootHostingController?.present(webView, animated: animated, completion: nil)
-        case .createEvent: break
-        case .back: break
         }
     }
 }

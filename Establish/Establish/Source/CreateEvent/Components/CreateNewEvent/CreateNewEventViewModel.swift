@@ -32,7 +32,8 @@ class CreateNewEventViewModel: ObservableObject {
     private var cancellable: AnyCancellable?
     
     private let locationService: LocationSearchService
-    private let coordinator: EnqueueViewCoordinator<RouteType>
+    
+    public let coordinator: EnqueueViewCoordinator<RouteType>
     
     init(coordinator: EnqueueViewCoordinator<RouteType>, locationService: LocationSearchService = LocationSearchService.shared) {
         self.coordinator = coordinator

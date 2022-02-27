@@ -39,9 +39,6 @@ struct CreateNewEventView: View {
                 
                 nextButton
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle("Create new event")
-            .navigationBarItems(trailing: Button("Cancel", action: viewModel.dismiss))
         }
        
     }

@@ -23,24 +23,28 @@ struct NewEventConfigurationView: View {
     }
     
     var body: some View {
-        Form {
-            eventInfo
-            
-            Section {
-                eventTagsInput
+        NavigationView {
+            Form {
+                eventInfo
                 
-                if !viewModel.storedTags.isEmpty {
-                    eventTags
+                Section {
+                    eventTagsInput
+                    
+                    if !viewModel.storedTags.isEmpty {
+                        eventTags
+                    }
+                    
+                    toggleablePaymentLinkInput
+                    toggleableRecurringEventInput
                 }
                 
-                toggleablePaymentLinkInput
-                toggleableRecurringEventInput
+                bottomButtons
             }
-            
-            bottomButtons
-        }
-        .alert(isPresented: $showingMonzoLinkInfoAlert) {
-            Alert(title: Text(viewModel.monzoAlertTitle), message: Text(viewModel.monzoAlertMessage), dismissButton: .default(Text("Ok")))
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing: Button("Cancel", action: viewModel.dismiss))
+            .alert(isPresented: $showingMonzoLinkInfoAlert) {
+                Alert(title: Text(viewModel.monzoAlertTitle), message: Text(viewModel.monzoAlertMessage), dismissButton: .default(Text("Ok")))
+            }
         }
     }
     
@@ -132,9 +136,9 @@ struct NewEventConfigurationView: View {
     private var bottomButtons: some View {
         Section {
             VStack {
-                Button("Create", action: { viewModel.createEvent() })
+                Button("Create", action: viewModel.createEvent)
                     .buttonStyle(ButtonStyle.Primary(themeManager: self.themeManager, isDisabled: false))
-                Button("Back to initial details", action: { })
+                Button("Back to initial details", action: viewModel.didTapBack)
                     .foregroundColor(themeManager.color(for: .brandGreen))
             }
         }

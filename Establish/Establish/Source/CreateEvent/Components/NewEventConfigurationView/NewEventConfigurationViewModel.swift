@@ -29,8 +29,6 @@ class NewEventConfigurationViewModel: ObservableObject, AppContextAccessProtocol
     }
     
     enum RouteType {
-        case back
-        case createEvent
         case monzoBlogWebView(url: String)
         case dismiss
     }
@@ -77,8 +75,12 @@ class NewEventConfigurationViewModel: ObservableObject, AppContextAccessProtocol
         coordinator.enqueue(with: .monzoBlogWebView(url: "https://monzo.com/blog/2019/02/04/pay-anyone-link"), animated: true)
     }
     
-    func dismissView() {
+    func dismiss() {
         coordinator.enqueue(with: .dismiss, animated: true)
+    }
+    
+    func didTapBack() {
+        self.dismiss()
     }
     
     private func createEventAccessCode() -> String {
