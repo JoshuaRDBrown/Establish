@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		72282C0B27AF01D700952855 /* LocationSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72282C0A27AF01D700952855 /* LocationSearchService.swift */; };
-		7244675827B06B65009F5507 /* SharableCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7244675727B06B65009F5507 /* SharableCodeView.swift */; };
 		7244675B27B06CE4009F5507 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7244675A27B06CE4009F5507 /* Lottie */; };
 		7244675F27B06E1F009F5507 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 7244675E27B06E1F009F5507 /* success.json */; };
 		7244676127B06E67009F5507 /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7244676027B06E67009F5507 /* LottieAnimationView.swift */; };
@@ -100,7 +99,6 @@
 
 /* Begin PBXFileReference section */
 		72282C0A27AF01D700952855 /* LocationSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchService.swift; sourceTree = "<group>"; };
-		7244675727B06B65009F5507 /* SharableCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharableCodeView.swift; sourceTree = "<group>"; };
 		7244675E27B06E1F009F5507 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		7244676027B06E67009F5507 /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
 		72CD544227CBD8A100303DCC /* CreateNewEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewEventViewModel.swift; sourceTree = "<group>"; };
@@ -447,7 +445,6 @@
 			children = (
 				72CD544527CBE09600303DCC /* NewEventConfigurationView */,
 				72CD544127CBD87D00303DCC /* CreateNewEvent */,
-				7244675727B06B65009F5507 /* SharableCodeView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -728,7 +725,6 @@
 			files = (
 				E8E9E37827996F830040CE1B /* CreateAccountCoordinator.swift in Sources */,
 				E888139427A4559E002DF4C0 /* WebView.swift in Sources */,
-				7244675827B06B65009F5507 /* SharableCodeView.swift in Sources */,
 				83B0AF0C275E665000A0242D /* EnqueuingCoordinator.swift in Sources */,
 				83B0AF1E275E667A00A0242D /* AppFlow.swift in Sources */,
 				E8E9E4B12799A6700040CE1B /* HomeViewModel.swift in Sources */,
