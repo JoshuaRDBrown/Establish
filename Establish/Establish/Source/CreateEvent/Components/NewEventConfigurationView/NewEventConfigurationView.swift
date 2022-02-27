@@ -23,28 +23,24 @@ struct NewEventConfigurationView: View {
     }
     
     var body: some View {
-        NavigationView {
-            Form {
-                eventInfo
+        Form {
+            eventInfo
+            
+            Section {
+                eventTagsInput
                 
-                Section {
-                    eventTagsInput
-                    
-                    if !viewModel.storedTags.isEmpty {
-                        eventTags
-                    }
-                    
-                    toggleablePaymentLinkInput
-                    toggleableRecurringEventInput
+                if !viewModel.storedTags.isEmpty {
+                    eventTags
                 }
                 
-                bottomButtons
+                toggleablePaymentLinkInput
+                toggleableRecurringEventInput
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarItems(trailing: Button("Cancel", action: viewModel.dismiss))
-            .alert(isPresented: $showingMonzoLinkInfoAlert) {
-                Alert(title: Text(viewModel.monzoAlertTitle), message: Text(viewModel.monzoAlertMessage), dismissButton: .default(Text("Ok")))
-            }
+            
+            bottomButtons
+        }
+        .alert(isPresented: $showingMonzoLinkInfoAlert) {
+            Alert(title: Text(viewModel.monzoAlertTitle), message: Text(viewModel.monzoAlertMessage), dismissButton: .default(Text("Ok")))
         }
     }
     
